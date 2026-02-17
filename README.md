@@ -1,57 +1,29 @@
-# 🧮 GUI-Based Calculator
+🧮 GUI-Based-Calculator
+A simple, functional desktop calculator. Follow these steps to bundle your script into a standalone executable and create a desktop icon.
 
-A simple, user-friendly desktop calculator built with Python. Follow the instructions below to convert the script into a standalone Windows application and create a desktop shortcut.
+🚀 Installation & Setup
+1. Install PyInstaller
+Open your terminal or command prompt and run the following command to install the packaging tool:
 
----
+Bash
+pip install pyinstaller
+Wait until the installation finishes before proceeding.
 
-## 🚀 How to Create a Desktop App
+2. Navigate to the Folder
+Change your directory to where your calculator.py file is located (e.g., the Desktop):
 
-Follow these four steps to bundle your script into a single `.exe` file.
-
-### 1. Install PyInstaller
-Open your Command Prompt or Terminal and install the necessary packaging tool:
-
-pip install pyinstaller2. Navigate to Your Folder
-Change your directory to where your calculator.py file is located. (Example for Desktop):
-
-
+Bash
 cd %USERPROFILE%\Desktop
 3. Build the Executable
-Run the following command to create the app.
+Run this command to compile your script into a single, windowed application:
 
---onefile: Bundles everything into one file.
-
---windowed: Ensures the app opens without a background console window.
-
-
+Bash
 pyinstaller --onefile --windowed calculator.py
-4. Locate Your App & Create Shortcut
-Once the process finishes:
+4. Locate Your App
+Once the process is complete, follow these steps to find your app:
 
-Open the dist folder (created in your project directory).
+Open the dist folder on your Desktop.
 
-Right-click calculator.exe.
+Find the file named calculator.exe.
 
-Select Send to → Desktop (create shortcut).2. Navigate to Your Folder
-Change your directory to where your calculator.py file is located. (Example for Desktop):
-
-
-cd %USERPROFILE%\Desktop
-3. Build the Executable
-Run the following command to create the app.
-
---onefile: Bundles everything into one file.
-
---windowed: Ensures the app opens without a background console window.
-
-
-pyinstaller --onefile --windowed calculator.py
-4. Locate Your App & Create Shortcut
-Once the process finishes:
-
-Open the dist folder (created in your project directory).
-
-Right-click calculator.exe.
-
-Select Send to → Desktop (create shortcut).
-
+Right-click the file → Select Send to → Desktop (create shortcut). 
