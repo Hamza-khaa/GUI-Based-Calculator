@@ -1,38 +1,56 @@
-﻿# GUI-Based-Calculator
- its a simple calculator, for making a desktop icon follow the steps 
-1- Install PyInstaller
+# 🧮 GUI-Based Calculator
 
-Type:
+A simple, user-friendly desktop calculator built with Python. Follow the instructions below to convert the script into a standalone Windows application and create a desktop shortcut.
 
-pip install pyinstaller
+---
 
+## 🚀 How to Create a Desktop App
 
-Wait until installation finishes.
-2-Go to Desktop Folder
+Follow these four steps to bundle your script into a single `.exe` file.
 
-Type:
+### 1. Install PyInstaller
+Open your Command Prompt or Terminal and install the necessary packaging tool:
+```bash
+pip install pyinstaller2. Navigate to Your Folder
+Change your directory to where your calculator.py file is located. (Example for Desktop):
 
+Bash
 cd %USERPROFILE%\Desktop
+3. Build the Executable
+Run the following command to create the app.
 
+--onefile: Bundles everything into one file.
 
-Press Enter
-3-Build the EXE
+--windowed: Ensures the app opens without a background console window.
 
-Type:
-
+Bash
 pyinstaller --onefile --windowed calculator.py
+4. Locate Your App & Create Shortcut
+Once the process finishes:
 
+Open the dist folder (created in your project directory).
 
-Press Enter
-4-find Your App
+Right-click calculator.exe.
 
-Open this folder:
+Select Send to → Desktop (create shortcut).2. Navigate to Your Folder
+Change your directory to where your calculator.py file is located. (Example for Desktop):
 
-Desktop → dist
+Bash
+cd %USERPROFILE%\Desktop
+3. Build the Executable
+Run the following command to create the app.
 
+--onefile: Bundles everything into one file.
 
-Inside:
+--windowed: Ensures the app opens without a background console window.
 
-calculator.exe
-Send to → Desktop (create shortcut)
+Bash
+pyinstaller --onefile --windowed calculator.py
+4. Locate Your App & Create Shortcut
+Once the process finishes:
 
+Open the dist folder (created in your project directory).
+
+Right-click calculator.exe.
+
+Select Send to → Desktop (create shortcut).
